@@ -7,19 +7,11 @@ import 'home_screen_wm.dart';
 class HomeScreen extends ElementaryWidget<IHomeScreenWidgetModel> {
   const HomeScreen({
     Key? key,
-    WidgetModelFactory wmFactory = defaultAppWidgetModelFactory,
+    WidgetModelFactory wmFactory = homeScreenWidgetModelFactory,
   }) : super(wmFactory, key: key);
 
   @override
   Widget build(IHomeScreenWidgetModel wm) {
-    return Scaffold();
+    return const Scaffold();
   }
-}
-
-/// Навигация к странице [HomeScreen]
-class HomeScreenRoute extends MaterialPageRoute {
-  HomeScreenRoute()
-      : super(
-          builder: (context) => HomeScreen(),
-        );
 }

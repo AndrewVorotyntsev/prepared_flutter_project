@@ -1,16 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'info_response.dart';
+part of 'info_response_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-InfoResponse _$InfoResponseFromJson(Map<String, dynamic> json) => InfoResponse(
+InfoResponseDto _$InfoResponseDtoFromJson(Map<String, dynamic> json) =>
+    InfoResponseDto(
       name: json['name'] as String?,
     );
-
-Map<String, dynamic> _$InfoResponseToJson(InfoResponse instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-    };

@@ -19,13 +19,13 @@ class _SampleApi implements SampleApi {
   String? baseUrl;
 
   @override
-  Future<InfoResponse> getInfo() async {
+  Future<InfoResponseDto> getV1Info() async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
     final _result = await _dio
-        .fetch<Map<String, dynamic>>(_setStreamType<InfoResponse>(Options(
+        .fetch<Map<String, dynamic>>(_setStreamType<InfoResponseDto>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
@@ -37,7 +37,7 @@ class _SampleApi implements SampleApi {
               data: _data,
             )
             .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    final value = InfoResponse.fromJson(_result.data!);
+    final value = InfoResponseDto.fromJson(_result.data!);
     return value;
   }
 

@@ -1,18 +1,19 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:prepared_flutter_project/models/info_response/info_response.dart';
+import 'package:prepared_flutter_project/data/sample/model/model_export.dart';
+import 'package:prepared_flutter_project/data/sample/sample_url.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'sample_api.g.dart';
 
 /// класс для запросов информации к серверу
 @singleton
-@RestApi(baseUrl: '')
+@RestApi()
 abstract class SampleApi {
   @factoryMethod
-  factory SampleApi(Dio dio) = _SampleApi;
+  factory SampleApi(Dio dio, {String baseUrl}) = _SampleApi;
 
   /// Отправка запроса на получение информации
-  @GET('/api/v1/info')
-  Future<InfoResponse> getInfo();
+  @GET(SampleUrl.v1Info)
+  Future<InfoResponseDto> getV1Info();
 }

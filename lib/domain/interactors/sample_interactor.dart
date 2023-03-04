@@ -1,6 +1,5 @@
-import 'package:elementary/elementary.dart';
 import 'package:injectable/injectable.dart';
-import 'package:prepared_flutter_project/repository/sample_repository.dart';
+import 'package:prepared_flutter_project/data/sample/repository/sample_repository.dart';
 
 /// Интерактор
 abstract class SampleInteractor {}
