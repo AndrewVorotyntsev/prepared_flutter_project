@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'info_response.g.dart';
 
-/// Модель респонса информации о пользователе
+/// Модель респонса информации
 @JsonSerializable()
 class InfoResponse {
   String? name;

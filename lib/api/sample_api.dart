@@ -5,14 +5,14 @@ import 'package:retrofit/retrofit.dart';
 
 part 'sample_api.g.dart';
 
-/// класс для запросов о профиле
+/// класс для запросов информации к серверу
 @singleton
 @RestApi(baseUrl: '')
 abstract class SampleApi {
   @factoryMethod
   factory SampleApi(Dio dio) = _SampleApi;
 
-  /// Отправка запроса на получение информации о пользователе
+  /// Отправка запроса на получение информации
   @GET('/api/v1/info')
   Future<InfoResponse> getInfo();
 }
