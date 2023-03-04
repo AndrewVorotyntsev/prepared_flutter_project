@@ -13,7 +13,7 @@ import 'package:prepared_flutter_project/data/sample/api/sample_api.dart'
 import 'package:prepared_flutter_project/data/sample/repository/sample_repository.dart'
     as _i7;
 import 'package:prepared_flutter_project/di/module/dio_module.dart' as _i9;
-import 'package:prepared_flutter_project/domain/interactors/sample_interactor.dart'
+import 'package:prepared_flutter_project/domain/sample/interactors/sample_interactor.dart'
     as _i8;
 import 'package:prepared_flutter_project/navigation/app_router.dart' as _i3;
 import 'package:prepared_flutter_project/util/error_handling/error_handler.dart'

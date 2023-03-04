@@ -1,7 +1,7 @@
 import 'package:injectable/injectable.dart';
 import 'package:prepared_flutter_project/data/sample/api/sample_api.dart';
 import 'package:prepared_flutter_project/data/sample/mapper/info_mapper.dart';
-import 'package:prepared_flutter_project/domain/entity/entity_export.dart';
+import 'package:prepared_flutter_project/domain/sample/entity/entity_export.dart';
 
 /// Репозиторий
 abstract class SampleRepository {

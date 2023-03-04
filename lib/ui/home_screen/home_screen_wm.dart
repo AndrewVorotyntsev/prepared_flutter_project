@@ -1,7 +1,7 @@
 import 'package:elementary/elementary.dart';
 import 'package:flutter/material.dart';
 import 'package:prepared_flutter_project/di/di_container.dart';
-import 'package:prepared_flutter_project/domain/interactors/sample_interactor.dart';
+import 'package:prepared_flutter_project/domain/sample/interactors/sample_interactor.dart';
 import 'package:prepared_flutter_project/ui/home_screen/home_screen.dart';
 import 'package:prepared_flutter_project/util/error_handling/error_handler.dart';
 
